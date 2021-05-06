@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		3276B6EA2642EADE005D205D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276B6E82642EADE005D205D /* Main.storyboard */; };
 		3276B6EC2642EAE1005D205D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3276B6EB2642EAE1005D205D /* Assets.xcassets */; };
 		3276B6EF2642EAE1005D205D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3276B6ED2642EAE1005D205D /* LaunchScreen.storyboard */; };
+		3276B7742643B1B1005D205D /* CDALocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276B7732643B1B1005D205D /* CDALocalNotificationManager.swift */; };
+		3276B7762643B2C7005D205D /* CDALocalNotificationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276B7752643B2C7005D205D /* CDALocalNotificationObject.swift */; };
+		3EB85AEA29BB08F8D4010826 /* Pods_CDANotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE9CE5F0A61F489EAB01356 /* Pods_CDANotification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		3276B6EB2642EAE1005D205D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3276B6EE2642EAE1005D205D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3276B6F02642EAE1005D205D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3276B7732643B1B1005D205D /* CDALocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDALocalNotificationManager.swift; sourceTree = "<group>"; };
+		3276B7752643B2C7005D205D /* CDALocalNotificationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDALocalNotificationObject.swift; sourceTree = "<group>"; };
+		707ED4A390CCFFF5CCA92318 /* Pods-CDANotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDANotification.debug.xcconfig"; path = "Target Support Files/Pods-CDANotification/Pods-CDANotification.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D75981D67648E6C016699A /* Pods-CDANotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDANotification.release.xcconfig"; path = "Target Support Files/Pods-CDANotification/Pods-CDANotification.release.xcconfig"; sourceTree = "<group>"; };
+		FCE9CE5F0A61F489EAB01356 /* Pods_CDANotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDANotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB85AEA29BB08F8D4010826 /* Pods_CDANotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AAA7E5DA6C3D8F6519162A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9CE5F0A61F489EAB01356 /* Pods_CDANotification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3276B6D62642EADE005D205D = {
 			isa = PBXGroup;
 			children = (
 				3276B6E12642EADE005D205D /* CDANotification */,
 				3276B6E02642EADE005D205D /* Products */,
+				7111C49C5FA51B9CC673E2F5 /* Pods */,
+				1AAA7E5DA6C3D8F6519162A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		3276B6E12642EADE005D205D /* CDANotification */ = {
 			isa = PBXGroup;
 			children = (
+				3276B7712643B15B005D205D /* Classes */,
 				3276B6E22642EADE005D205D /* AppDelegate.swift */,
 				3276B6E42642EADE005D205D /* SceneDelegate.swift */,
 				3276B6E62642EADE005D205D /* ViewController.swift */,
@@ -67,6 +87,32 @@
 			path = CDANotification;
 			sourceTree = "<group>";
 		};
+		3276B7712643B15B005D205D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3276B7722643B16E005D205D /* LocalNotification */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3276B7722643B16E005D205D /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				3276B7732643B1B1005D205D /* CDALocalNotificationManager.swift */,
+				3276B7752643B2C7005D205D /* CDALocalNotificationObject.swift */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
+		7111C49C5FA51B9CC673E2F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				707ED4A390CCFFF5CCA92318 /* Pods-CDANotification.debug.xcconfig */,
+				D5D75981D67648E6C016699A /* Pods-CDANotification.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3276B6F32642EAE1005D205D /* Build configuration list for PBXNativeTarget "CDANotification" */;
 			buildPhases = (
+				F07537392BBE21C102A3B654 /* [CP] Check Pods Manifest.lock */,
 				3276B6DB2642EADE005D205D /* Sources */,
 				3276B6DC2642EADE005D205D /* Frameworks */,
 				3276B6DD2642EADE005D205D /* Resources */,
+				D607E570A28F27A20DA222A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +180,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D607E570A28F27A20DA222A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDANotification/Pods-CDANotification-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDANotification/Pods-CDANotification-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDANotification/Pods-CDANotification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07537392BBE21C102A3B654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDANotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3276B6DB2642EADE005D205D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +229,9 @@
 			files = (
 				3276B6E72642EADE005D205D /* ViewController.swift in Sources */,
 				3276B6E32642EADE005D205D /* AppDelegate.swift in Sources */,
+				3276B7762643B2C7005D205D /* CDALocalNotificationObject.swift in Sources */,
 				3276B6E52642EADE005D205D /* SceneDelegate.swift in Sources */,
+				3276B7742643B1B1005D205D /* CDALocalNotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +375,14 @@
 		};
 		3276B6F42642EAE1005D205D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707ED4A390CCFFF5CCA92318 /* Pods-CDANotification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38VT3MSS8Q;
 				INFOPLIST_FILE = CDANotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +396,14 @@
 		};
 		3276B6F52642EAE1005D205D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D75981D67648E6C016699A /* Pods-CDANotification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38VT3MSS8Q;
 				INFOPLIST_FILE = CDANotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
