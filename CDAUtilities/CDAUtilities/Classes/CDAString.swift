@@ -6,8 +6,25 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
+    
+    func openScheme(){
+        
+        guard let scheme = self.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed), let url = URL(string: scheme) else { return}        
+        UIApplication.shared.open(url, options: [:], completionHandler: {
+            (success) in
+            print("Open \(self): \(success)")
+        })
+    
+    }
+    
+    var isValidURL: Bool {
+        let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+        guard let match = detector.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.utf16.count)) else { return false }
+        return match.range.length == self.utf16.count
+    }
     
     public var trim: String {
         return self.trimmingCharacters(in: CharacterSet.whitespaces)
