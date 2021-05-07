@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CDALocation/Pods-CDALocation-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CDANotification/CDANotification.framework
+${BUILT_PRODUCTS_DIR}/CDAUtilities/CDAUtilities.framework

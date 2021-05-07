@@ -1,0 +1,6 @@
+framework module CDAUtilities {
+  umbrella header "CDAUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}
