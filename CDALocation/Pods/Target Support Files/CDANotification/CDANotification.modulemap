@@ -1,6 +1,0 @@
-framework module CDANotification {
-  umbrella header "CDANotification-umbrella.h"
-
-  export *
-  module * { export * }
-}
