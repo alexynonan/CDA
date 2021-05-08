@@ -21,6 +21,8 @@
 		3276B72426435DC7005D205D /* CDASystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276B72326435DC7005D205D /* CDASystemAlert.swift */; };
 		3276B72626436C4B005D205D /* CDAColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276B72526436C4B005D205D /* CDAColor.swift */; };
 		3276B72826436FA6005D205D /* CDAJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276B72726436FA6005D205D /* CDAJSON.swift */; };
+		327F1AA1264667E5000A877E /* CDAPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327F1AA0264667E5000A877E /* CDAPoint.swift */; };
+		32A4A7D72646667100D52A7F /* CDAAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4A7D62646667100D52A7F /* CDAAttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		3276B72326435DC7005D205D /* CDASystemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDASystemAlert.swift; sourceTree = "<group>"; };
 		3276B72526436C4B005D205D /* CDAColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAColor.swift; sourceTree = "<group>"; };
 		3276B72726436FA6005D205D /* CDAJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAJSON.swift; sourceTree = "<group>"; };
+		327F1AA0264667E5000A877E /* CDAPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAPoint.swift; sourceTree = "<group>"; };
+		32A4A7D62646667100D52A7F /* CDAAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAAttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +95,12 @@
 				3276B71926431034005D205D /* CDAImage.swift */,
 				3276B71D26435482005D205D /* CDADateManager.swift */,
 				3276B71F2643550D005D205D /* CDAViewController.swift */,
+				32A4A7D62646667100D52A7F /* CDAAttributedString.swift */,
 				3276B72126435964005D205D /* CDAString.swift */,
 				3276B72326435DC7005D205D /* CDASystemAlert.swift */,
 				3276B72526436C4B005D205D /* CDAColor.swift */,
 				3276B72726436FA6005D205D /* CDAJSON.swift */,
+				327F1AA0264667E5000A877E /* CDAPoint.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -171,12 +177,14 @@
 			files = (
 				3276B71E26435482005D205D /* CDADateManager.swift in Sources */,
 				3276B72226435964005D205D /* CDAString.swift in Sources */,
+				327F1AA1264667E5000A877E /* CDAPoint.swift in Sources */,
 				3276B7072642FAAA005D205D /* ViewController.swift in Sources */,
 				3276B71A26431034005D205D /* CDAImage.swift in Sources */,
 				3276B7032642FAAA005D205D /* AppDelegate.swift in Sources */,
 				3276B7202643550D005D205D /* CDAViewController.swift in Sources */,
 				3276B72826436FA6005D205D /* CDAJSON.swift in Sources */,
 				3276B7052642FAAA005D205D /* SceneDelegate.swift in Sources */,
+				32A4A7D72646667100D52A7F /* CDAAttributedString.swift in Sources */,
 				3276B72426435DC7005D205D /* CDASystemAlert.swift in Sources */,
 				3276B72626436C4B005D205D /* CDAColor.swift in Sources */,
 				3276B7182642FE00005D205D /* CDAKeyboardManager.swift in Sources */,

@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32589B762646569C000B9CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B752646569C000B9CF2 /* AppDelegate.swift */; };
+		32589B782646569C000B9CF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B772646569C000B9CF2 /* SceneDelegate.swift */; };
+		32589B7A2646569C000B9CF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B792646569C000B9CF2 /* ViewController.swift */; };
+		32589B7D2646569C000B9CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32589B7B2646569C000B9CF2 /* Main.storyboard */; };
+		32589B7F2646569D000B9CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32589B7E2646569D000B9CF2 /* Assets.xcassets */; };
+		32589B822646569D000B9CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32589B802646569D000B9CF2 /* LaunchScreen.storyboard */; };
+		32589BCE26465914000B9CF2 /* CDAUICalendarViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B8B26465913000B9CF2 /* CDAUICalendarViewStyle.swift */; };
+		32589BCF26465914000B9CF2 /* CDAUIDayCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B8C26465913000B9CF2 /* CDAUIDayCalendarCollectionViewCell.swift */; };
+		32589BD026465914000B9CF2 /* CDAUICalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B8D26465913000B9CF2 /* CDAUICalendar.swift */; };
+		32589BD126465914000B9CF2 /* CDAUIShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B8F26465913000B9CF2 /* CDAUIShadowImageView.swift */; };
+		32589BD226465914000B9CF2 /* CDAUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9026465913000B9CF2 /* CDAUIImageView.swift */; };
+		32589BD326465914000B9CF2 /* CDAUIBorderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9126465913000B9CF2 /* CDAUIBorderImageView.swift */; };
+		32589BD426465914000B9CF2 /* CDAUIShapeImgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9226465913000B9CF2 /* CDAUIShapeImgeView.swift */; };
+		32589BD526465914000B9CF2 /* CDAUIShapeSafeKeyboardKeyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9426465913000B9CF2 /* CDAUIShapeSafeKeyboardKeyStyle.swift */; };
+		32589BD626465914000B9CF2 /* CDAUIBorderSafeKeyboardKeyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9526465913000B9CF2 /* CDAUIBorderSafeKeyboardKeyStyle.swift */; };
+		32589BD726465914000B9CF2 /* CDAUISafeKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9626465913000B9CF2 /* CDAUISafeKeyboardView.swift */; };
+		32589BD826465914000B9CF2 /* CDAUISafeKeyboardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9726465913000B9CF2 /* CDAUISafeKeyboardStyle.swift */; };
+		32589BD926465914000B9CF2 /* CDAUIAppearanceSafeKeyboardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9826465913000B9CF2 /* CDAUIAppearanceSafeKeyboardStyle.swift */; };
+		32589BDA26465914000B9CF2 /* CDAUIInsetsSafeKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9926465913000B9CF2 /* CDAUIInsetsSafeKeyboard.swift */; };
+		32589BDB26465914000B9CF2 /* CDAUISafeKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9A26465913000B9CF2 /* CDAUISafeKeyboard.swift */; };
+		32589BDC26465914000B9CF2 /* CDAUIShadowSafeKeyboardKeyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9B26465913000B9CF2 /* CDAUIShadowSafeKeyboardKeyStyle.swift */; };
+		32589BDD26465914000B9CF2 /* CDAUIShapeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9D26465913000B9CF2 /* CDAUIShapeTabBar.swift */; };
+		32589BDE26465914000B9CF2 /* CDAUIBorderTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589B9E26465913000B9CF2 /* CDAUIBorderTabBar.swift */; };
+		32589BDF26465914000B9CF2 /* CDAUIShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA026465913000B9CF2 /* CDAUIShadowTextField.swift */; };
+		32589BE026465914000B9CF2 /* CDAUIInputTextRestrictTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA126465913000B9CF2 /* CDAUIInputTextRestrictTextField.swift */; };
+		32589BE126465914000B9CF2 /* CDAUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA226465913000B9CF2 /* CDAUITextField.swift */; };
+		32589BE226465914000B9CF2 /* CDAUIBorderStateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA326465913000B9CF2 /* CDAUIBorderStateTextField.swift */; };
+		32589BE326465914000B9CF2 /* CDAUIIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA426465913000B9CF2 /* CDAUIIconTextField.swift */; };
+		32589BE426465914000B9CF2 /* CDAUIPlaceHolderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA526465913000B9CF2 /* CDAUIPlaceHolderTextField.swift */; };
+		32589BE526465914000B9CF2 /* CDAUIInsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA626465913000B9CF2 /* CDAUIInsetTextField.swift */; };
+		32589BE626465914000B9CF2 /* CDAUIShapeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA726465913000B9CF2 /* CDAUIShapeTextField.swift */; };
+		32589BE726465914000B9CF2 /* CDAUIInputSafeKeyboardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA826465913000B9CF2 /* CDAUIInputSafeKeyboardTextField.swift */; };
+		32589BE826465914000B9CF2 /* CDAUIBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BA926465913000B9CF2 /* CDAUIBorderTextField.swift */; };
+		32589BE926465914000B9CF2 /* CDAUIInputErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BAA26465913000B9CF2 /* CDAUIInputErrorTextField.swift */; };
+		32589BEA26465914000B9CF2 /* CSUIFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BAC26465913000B9CF2 /* CSUIFormValidator.swift */; };
+		32589BEB26465914000B9CF2 /* CDAUIShadowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BAE26465914000B9CF2 /* CDAUIShadowLabel.swift */; };
+		32589BEC26465914000B9CF2 /* CDAUIInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BAF26465914000B9CF2 /* CDAUIInsetLabel.swift */; };
+		32589BED26465914000B9CF2 /* CDAUIAttributedTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB026465914000B9CF2 /* CDAUIAttributedTextLabel.swift */; };
+		32589BEE26465914000B9CF2 /* CDAUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB126465914000B9CF2 /* CDAUILabel.swift */; };
+		32589BEF26465914000B9CF2 /* CDAUILinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB326465914000B9CF2 /* CDAUILinearGradientView.swift */; };
+		32589BF026465914000B9CF2 /* CDAUIShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB426465914000B9CF2 /* CDAUIShadowView.swift */; };
+		32589BF126465914000B9CF2 /* CDAUIRadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB526465914000B9CF2 /* CDAUIRadialGradientView.swift */; };
+		32589BF226465914000B9CF2 /* CSUIShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB626465914000B9CF2 /* CSUIShapeView.swift */; };
+		32589BF326465914000B9CF2 /* CDAUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB726465914000B9CF2 /* CDAUIView.swift */; };
+		32589BF426465914000B9CF2 /* CDAUIBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BB826465914000B9CF2 /* CDAUIBorderView.swift */; };
+		32589BF526465914000B9CF2 /* CDAUIShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBA26465914000B9CF2 /* CDAUIShadowButton.swift */; };
+		32589BF626465914000B9CF2 /* CDAUIGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBB26465914000B9CF2 /* CDAUIGradientButton.swift */; };
+		32589BF726465914000B9CF2 /* CDAUIShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBC26465914000B9CF2 /* CDAUIShapeButton.swift */; };
+		32589BF826465914000B9CF2 /* CDAUIBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBD26465914000B9CF2 /* CDAUIBorderButton.swift */; };
+		32589BF926465914000B9CF2 /* CDAUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBE26465914000B9CF2 /* CDAUIButton.swift */; };
+		32589BFA26465914000B9CF2 /* CDAUIAttributeTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BBF26465914000B9CF2 /* CDAUIAttributeTextButton.swift */; };
+		32589BFB26465914000B9CF2 /* CDAUIAttributeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC126465914000B9CF2 /* CDAUIAttributeText.swift */; };
+		32589BFC26465914000B9CF2 /* CDAUIInputTextRestrict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC226465914000B9CF2 /* CDAUIInputTextRestrict.swift */; };
+		32589BFD26465914000B9CF2 /* CDAUIInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC326465914000B9CF2 /* CDAUIInset.swift */; };
+		32589BFF26465914000B9CF2 /* CDAUIPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC526465914000B9CF2 /* CDAUIPlaceHolder.swift */; };
+		32589C0026465914000B9CF2 /* CDAUIRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC626465914000B9CF2 /* CDAUIRadialGradient.swift */; };
+		32589C0126465914000B9CF2 /* CDAUIShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC726465914000B9CF2 /* CDAUIShape.swift */; };
+		32589C0226465914000B9CF2 /* CDAUILinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC826465914000B9CF2 /* CDAUILinearGradient.swift */; };
+		32589C0326465914000B9CF2 /* CDAUIInputBorderSate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BC926465914000B9CF2 /* CDAUIInputBorderSate.swift */; };
+		32589C0426465914000B9CF2 /* CDAUIShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BCA26465914000B9CF2 /* CDAUIShadow.swift */; };
+		32589C0526465914000B9CF2 /* CDAUIInputSafeKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BCB26465914000B9CF2 /* CDAUIInputSafeKeyboard.swift */; };
+		32589C0626465914000B9CF2 /* CDAUIBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BCC26465914000B9CF2 /* CDAUIBorder.swift */; };
+		32589C0726465914000B9CF2 /* CDAUIInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32589BCD26465914000B9CF2 /* CDAUIInputError.swift */; };
+		631D594DA033FAEFA22AC43F /* Pods_CDAUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64A12699FA10258683DAD56 /* Pods_CDAUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FE370F27D82D9A08B8E7555 /* Pods-CDAUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAUI.debug.xcconfig"; path = "Target Support Files/Pods-CDAUI/Pods-CDAUI.debug.xcconfig"; sourceTree = "<group>"; };
+		32589B722646569C000B9CF2 /* CDAUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDAUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32589B752646569C000B9CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32589B772646569C000B9CF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		32589B792646569C000B9CF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32589B7C2646569C000B9CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32589B7E2646569D000B9CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32589B812646569D000B9CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32589B832646569D000B9CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32589B8B26465913000B9CF2 /* CDAUICalendarViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUICalendarViewStyle.swift; sourceTree = "<group>"; };
+		32589B8C26465913000B9CF2 /* CDAUIDayCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIDayCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		32589B8D26465913000B9CF2 /* CDAUICalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUICalendar.swift; sourceTree = "<group>"; };
+		32589B8F26465913000B9CF2 /* CDAUIShadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowImageView.swift; sourceTree = "<group>"; };
+		32589B9026465913000B9CF2 /* CDAUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIImageView.swift; sourceTree = "<group>"; };
+		32589B9126465913000B9CF2 /* CDAUIBorderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderImageView.swift; sourceTree = "<group>"; };
+		32589B9226465913000B9CF2 /* CDAUIShapeImgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShapeImgeView.swift; sourceTree = "<group>"; };
+		32589B9426465913000B9CF2 /* CDAUIShapeSafeKeyboardKeyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShapeSafeKeyboardKeyStyle.swift; sourceTree = "<group>"; };
+		32589B9526465913000B9CF2 /* CDAUIBorderSafeKeyboardKeyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderSafeKeyboardKeyStyle.swift; sourceTree = "<group>"; };
+		32589B9626465913000B9CF2 /* CDAUISafeKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUISafeKeyboardView.swift; sourceTree = "<group>"; };
+		32589B9726465913000B9CF2 /* CDAUISafeKeyboardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUISafeKeyboardStyle.swift; sourceTree = "<group>"; };
+		32589B9826465913000B9CF2 /* CDAUIAppearanceSafeKeyboardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIAppearanceSafeKeyboardStyle.swift; sourceTree = "<group>"; };
+		32589B9926465913000B9CF2 /* CDAUIInsetsSafeKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInsetsSafeKeyboard.swift; sourceTree = "<group>"; };
+		32589B9A26465913000B9CF2 /* CDAUISafeKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUISafeKeyboard.swift; sourceTree = "<group>"; };
+		32589B9B26465913000B9CF2 /* CDAUIShadowSafeKeyboardKeyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowSafeKeyboardKeyStyle.swift; sourceTree = "<group>"; };
+		32589B9D26465913000B9CF2 /* CDAUIShapeTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShapeTabBar.swift; sourceTree = "<group>"; };
+		32589B9E26465913000B9CF2 /* CDAUIBorderTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderTabBar.swift; sourceTree = "<group>"; };
+		32589BA026465913000B9CF2 /* CDAUIShadowTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowTextField.swift; sourceTree = "<group>"; };
+		32589BA126465913000B9CF2 /* CDAUIInputTextRestrictTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputTextRestrictTextField.swift; sourceTree = "<group>"; };
+		32589BA226465913000B9CF2 /* CDAUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUITextField.swift; sourceTree = "<group>"; };
+		32589BA326465913000B9CF2 /* CDAUIBorderStateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderStateTextField.swift; sourceTree = "<group>"; };
+		32589BA426465913000B9CF2 /* CDAUIIconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIIconTextField.swift; sourceTree = "<group>"; };
+		32589BA526465913000B9CF2 /* CDAUIPlaceHolderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIPlaceHolderTextField.swift; sourceTree = "<group>"; };
+		32589BA626465913000B9CF2 /* CDAUIInsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInsetTextField.swift; sourceTree = "<group>"; };
+		32589BA726465913000B9CF2 /* CDAUIShapeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShapeTextField.swift; sourceTree = "<group>"; };
+		32589BA826465913000B9CF2 /* CDAUIInputSafeKeyboardTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputSafeKeyboardTextField.swift; sourceTree = "<group>"; };
+		32589BA926465913000B9CF2 /* CDAUIBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderTextField.swift; sourceTree = "<group>"; };
+		32589BAA26465913000B9CF2 /* CDAUIInputErrorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputErrorTextField.swift; sourceTree = "<group>"; };
+		32589BAC26465913000B9CF2 /* CSUIFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUIFormValidator.swift; sourceTree = "<group>"; };
+		32589BAE26465914000B9CF2 /* CDAUIShadowLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowLabel.swift; sourceTree = "<group>"; };
+		32589BAF26465914000B9CF2 /* CDAUIInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInsetLabel.swift; sourceTree = "<group>"; };
+		32589BB026465914000B9CF2 /* CDAUIAttributedTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIAttributedTextLabel.swift; sourceTree = "<group>"; };
+		32589BB126465914000B9CF2 /* CDAUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUILabel.swift; sourceTree = "<group>"; };
+		32589BB326465914000B9CF2 /* CDAUILinearGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUILinearGradientView.swift; sourceTree = "<group>"; };
+		32589BB426465914000B9CF2 /* CDAUIShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowView.swift; sourceTree = "<group>"; };
+		32589BB526465914000B9CF2 /* CDAUIRadialGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIRadialGradientView.swift; sourceTree = "<group>"; };
+		32589BB626465914000B9CF2 /* CSUIShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSUIShapeView.swift; sourceTree = "<group>"; };
+		32589BB726465914000B9CF2 /* CDAUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIView.swift; sourceTree = "<group>"; };
+		32589BB826465914000B9CF2 /* CDAUIBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderView.swift; sourceTree = "<group>"; };
+		32589BBA26465914000B9CF2 /* CDAUIShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadowButton.swift; sourceTree = "<group>"; };
+		32589BBB26465914000B9CF2 /* CDAUIGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIGradientButton.swift; sourceTree = "<group>"; };
+		32589BBC26465914000B9CF2 /* CDAUIShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShapeButton.swift; sourceTree = "<group>"; };
+		32589BBD26465914000B9CF2 /* CDAUIBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorderButton.swift; sourceTree = "<group>"; };
+		32589BBE26465914000B9CF2 /* CDAUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIButton.swift; sourceTree = "<group>"; };
+		32589BBF26465914000B9CF2 /* CDAUIAttributeTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIAttributeTextButton.swift; sourceTree = "<group>"; };
+		32589BC126465914000B9CF2 /* CDAUIAttributeText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIAttributeText.swift; sourceTree = "<group>"; };
+		32589BC226465914000B9CF2 /* CDAUIInputTextRestrict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputTextRestrict.swift; sourceTree = "<group>"; };
+		32589BC326465914000B9CF2 /* CDAUIInset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInset.swift; sourceTree = "<group>"; };
+		32589BC526465914000B9CF2 /* CDAUIPlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIPlaceHolder.swift; sourceTree = "<group>"; };
+		32589BC626465914000B9CF2 /* CDAUIRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIRadialGradient.swift; sourceTree = "<group>"; };
+		32589BC726465914000B9CF2 /* CDAUIShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShape.swift; sourceTree = "<group>"; };
+		32589BC826465914000B9CF2 /* CDAUILinearGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUILinearGradient.swift; sourceTree = "<group>"; };
+		32589BC926465914000B9CF2 /* CDAUIInputBorderSate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputBorderSate.swift; sourceTree = "<group>"; };
+		32589BCA26465914000B9CF2 /* CDAUIShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIShadow.swift; sourceTree = "<group>"; };
+		32589BCB26465914000B9CF2 /* CDAUIInputSafeKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputSafeKeyboard.swift; sourceTree = "<group>"; };
+		32589BCC26465914000B9CF2 /* CDAUIBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIBorder.swift; sourceTree = "<group>"; };
+		32589BCD26465914000B9CF2 /* CDAUIInputError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAUIInputError.swift; sourceTree = "<group>"; };
+		7837353ECC1D9329DDEB3B60 /* Pods-CDAUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAUI.release.xcconfig"; path = "Target Support Files/Pods-CDAUI/Pods-CDAUI.release.xcconfig"; sourceTree = "<group>"; };
+		E64A12699FA10258683DAD56 /* Pods_CDAUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDAUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32589B6F2646569C000B9CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631D594DA033FAEFA22AC43F /* Pods_CDAUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32589B692646569C000B9CF2 = {
+			isa = PBXGroup;
+			children = (
+				32589B742646569C000B9CF2 /* CDAUI */,
+				32589B732646569C000B9CF2 /* Products */,
+				8E8020206E7AB6C6A57BCB9A /* Pods */,
+				6B5722C8C5E63C3E8DC8BA46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32589B732646569C000B9CF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32589B722646569C000B9CF2 /* CDAUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32589B742646569C000B9CF2 /* CDAUI */ = {
+			isa = PBXGroup;
+			children = (
+				32589B8926465823000B9CF2 /* Classes */,
+				32589B752646569C000B9CF2 /* AppDelegate.swift */,
+				32589B772646569C000B9CF2 /* SceneDelegate.swift */,
+				32589B792646569C000B9CF2 /* ViewController.swift */,
+				32589B7B2646569C000B9CF2 /* Main.storyboard */,
+				32589B7E2646569D000B9CF2 /* Assets.xcassets */,
+				32589B802646569D000B9CF2 /* LaunchScreen.storyboard */,
+				32589B832646569D000B9CF2 /* Info.plist */,
+			);
+			path = CDAUI;
+			sourceTree = "<group>";
+		};
+		32589B8926465823000B9CF2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32589BB926465914000B9CF2 /* CSUIButton */,
+				32589B8A26465913000B9CF2 /* CSUICalendar */,
+				32589B8E26465913000B9CF2 /* CSUIImageView */,
+				32589BAD26465914000B9CF2 /* CSUILabel */,
+				32589B9326465913000B9CF2 /* CSUISafeKeyboard */,
+				32589B9C26465913000B9CF2 /* CSUITabBar */,
+				32589B9F26465913000B9CF2 /* CSUITextField */,
+				32589BB226465914000B9CF2 /* CSUIView */,
+				32589BAB26465913000B9CF2 /* CSUIViewController */,
+				32589BC026465914000B9CF2 /* General */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32589B8A26465913000B9CF2 /* CSUICalendar */ = {
+			isa = PBXGroup;
+			children = (
+				32589B8B26465913000B9CF2 /* CDAUICalendarViewStyle.swift */,
+				32589B8C26465913000B9CF2 /* CDAUIDayCalendarCollectionViewCell.swift */,
+				32589B8D26465913000B9CF2 /* CDAUICalendar.swift */,
+			);
+			path = CSUICalendar;
+			sourceTree = "<group>";
+		};
+		32589B8E26465913000B9CF2 /* CSUIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				32589B8F26465913000B9CF2 /* CDAUIShadowImageView.swift */,
+				32589B9026465913000B9CF2 /* CDAUIImageView.swift */,
+				32589B9126465913000B9CF2 /* CDAUIBorderImageView.swift */,
+				32589B9226465913000B9CF2 /* CDAUIShapeImgeView.swift */,
+			);
+			path = CSUIImageView;
+			sourceTree = "<group>";
+		};
+		32589B9326465913000B9CF2 /* CSUISafeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				32589B9426465913000B9CF2 /* CDAUIShapeSafeKeyboardKeyStyle.swift */,
+				32589B9526465913000B9CF2 /* CDAUIBorderSafeKeyboardKeyStyle.swift */,
+				32589B9626465913000B9CF2 /* CDAUISafeKeyboardView.swift */,
+				32589B9726465913000B9CF2 /* CDAUISafeKeyboardStyle.swift */,
+				32589B9826465913000B9CF2 /* CDAUIAppearanceSafeKeyboardStyle.swift */,
+				32589B9926465913000B9CF2 /* CDAUIInsetsSafeKeyboard.swift */,
+				32589B9A26465913000B9CF2 /* CDAUISafeKeyboard.swift */,
+				32589B9B26465913000B9CF2 /* CDAUIShadowSafeKeyboardKeyStyle.swift */,
+			);
+			path = CSUISafeKeyboard;
+			sourceTree = "<group>";
+		};
+		32589B9C26465913000B9CF2 /* CSUITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				32589B9D26465913000B9CF2 /* CDAUIShapeTabBar.swift */,
+				32589B9E26465913000B9CF2 /* CDAUIBorderTabBar.swift */,
+			);
+			path = CSUITabBar;
+			sourceTree = "<group>";
+		};
+		32589B9F26465913000B9CF2 /* CSUITextField */ = {
+			isa = PBXGroup;
+			children = (
+				32589BA026465913000B9CF2 /* CDAUIShadowTextField.swift */,
+				32589BA126465913000B9CF2 /* CDAUIInputTextRestrictTextField.swift */,
+				32589BA226465913000B9CF2 /* CDAUITextField.swift */,
+				32589BA326465913000B9CF2 /* CDAUIBorderStateTextField.swift */,
+				32589BA426465913000B9CF2 /* CDAUIIconTextField.swift */,
+				32589BA526465913000B9CF2 /* CDAUIPlaceHolderTextField.swift */,
+				32589BA626465913000B9CF2 /* CDAUIInsetTextField.swift */,
+				32589BA726465913000B9CF2 /* CDAUIShapeTextField.swift */,
+				32589BA826465913000B9CF2 /* CDAUIInputSafeKeyboardTextField.swift */,
+				32589BA926465913000B9CF2 /* CDAUIBorderTextField.swift */,
+				32589BAA26465913000B9CF2 /* CDAUIInputErrorTextField.swift */,
+			);
+			path = CSUITextField;
+			sourceTree = "<group>";
+		};
+		32589BAB26465913000B9CF2 /* CSUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32589BAC26465913000B9CF2 /* CSUIFormValidator.swift */,
+			);
+			path = CSUIViewController;
+			sourceTree = "<group>";
+		};
+		32589BAD26465914000B9CF2 /* CSUILabel */ = {
+			isa = PBXGroup;
+			children = (
+				32589BAE26465914000B9CF2 /* CDAUIShadowLabel.swift */,
+				32589BAF26465914000B9CF2 /* CDAUIInsetLabel.swift */,
+				32589BB026465914000B9CF2 /* CDAUIAttributedTextLabel.swift */,
+				32589BB126465914000B9CF2 /* CDAUILabel.swift */,
+			);
+			path = CSUILabel;
+			sourceTree = "<group>";
+		};
+		32589BB226465914000B9CF2 /* CSUIView */ = {
+			isa = PBXGroup;
+			children = (
+				32589BB326465914000B9CF2 /* CDAUILinearGradientView.swift */,
+				32589BB426465914000B9CF2 /* CDAUIShadowView.swift */,
+				32589BB526465914000B9CF2 /* CDAUIRadialGradientView.swift */,
+				32589BB626465914000B9CF2 /* CSUIShapeView.swift */,
+				32589BB726465914000B9CF2 /* CDAUIView.swift */,
+				32589BB826465914000B9CF2 /* CDAUIBorderView.swift */,
+			);
+			path = CSUIView;
+			sourceTree = "<group>";
+		};
+		32589BB926465914000B9CF2 /* CSUIButton */ = {
+			isa = PBXGroup;
+			children = (
+				32589BBA26465914000B9CF2 /* CDAUIShadowButton.swift */,
+				32589BBB26465914000B9CF2 /* CDAUIGradientButton.swift */,
+				32589BBC26465914000B9CF2 /* CDAUIShapeButton.swift */,
+				32589BBD26465914000B9CF2 /* CDAUIBorderButton.swift */,
+				32589BBE26465914000B9CF2 /* CDAUIButton.swift */,
+				32589BBF26465914000B9CF2 /* CDAUIAttributeTextButton.swift */,
+			);
+			path = CSUIButton;
+			sourceTree = "<group>";
+		};
+		32589BC026465914000B9CF2 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				32589BC126465914000B9CF2 /* CDAUIAttributeText.swift */,
+				32589BC226465914000B9CF2 /* CDAUIInputTextRestrict.swift */,
+				32589BC326465914000B9CF2 /* CDAUIInset.swift */,
+				32589BC526465914000B9CF2 /* CDAUIPlaceHolder.swift */,
+				32589BC626465914000B9CF2 /* CDAUIRadialGradient.swift */,
+				32589BC726465914000B9CF2 /* CDAUIShape.swift */,
+				32589BC826465914000B9CF2 /* CDAUILinearGradient.swift */,
+				32589BC926465914000B9CF2 /* CDAUIInputBorderSate.swift */,
+				32589BCA26465914000B9CF2 /* CDAUIShadow.swift */,
+				32589BCB26465914000B9CF2 /* CDAUIInputSafeKeyboard.swift */,
+				32589BCC26465914000B9CF2 /* CDAUIBorder.swift */,
+				32589BCD26465914000B9CF2 /* CDAUIInputError.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		6B5722C8C5E63C3E8DC8BA46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E64A12699FA10258683DAD56 /* Pods_CDAUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E8020206E7AB6C6A57BCB9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FE370F27D82D9A08B8E7555 /* Pods-CDAUI.debug.xcconfig */,
+				7837353ECC1D9329DDEB3B60 /* Pods-CDAUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32589B712646569C000B9CF2 /* CDAUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32589B862646569D000B9CF2 /* Build configuration list for PBXNativeTarget "CDAUI" */;
+			buildPhases = (
+				5793FA154513215065596293 /* [CP] Check Pods Manifest.lock */,
+				32589B6E2646569C000B9CF2 /* Sources */,
+				32589B6F2646569C000B9CF2 /* Frameworks */,
+				32589B702646569C000B9CF2 /* Resources */,
+				AF01A1EC7C912DDD8B8F9E62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDAUI;
+			productName = CDAUI;
+			productReference = 32589B722646569C000B9CF2 /* CDAUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32589B6A2646569C000B9CF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					32589B712646569C000B9CF2 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 32589B6D2646569C000B9CF2 /* Build configuration list for PBXProject "CDAUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32589B692646569C000B9CF2;
+			productRefGroup = 32589B732646569C000B9CF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32589B712646569C000B9CF2 /* CDAUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32589B702646569C000B9CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32589B822646569D000B9CF2 /* LaunchScreen.storyboard in Resources */,
+				32589B7F2646569D000B9CF2 /* Assets.xcassets in Resources */,
+				32589B7D2646569C000B9CF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5793FA154513215065596293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDAUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF01A1EC7C912DDD8B8F9E62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDAUI/Pods-CDAUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDAUI/Pods-CDAUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDAUI/Pods-CDAUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32589B6E2646569C000B9CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32589BEA26465914000B9CF2 /* CSUIFormValidator.swift in Sources */,
+				32589BFA26465914000B9CF2 /* CDAUIAttributeTextButton.swift in Sources */,
+				32589BDB26465914000B9CF2 /* CDAUISafeKeyboard.swift in Sources */,
+				32589BEC26465914000B9CF2 /* CDAUIInsetLabel.swift in Sources */,
+				32589BE626465914000B9CF2 /* CDAUIShapeTextField.swift in Sources */,
+				32589BF726465914000B9CF2 /* CDAUIShapeButton.swift in Sources */,
+				32589C0126465914000B9CF2 /* CDAUIShape.swift in Sources */,
+				32589BF026465914000B9CF2 /* CDAUIShadowView.swift in Sources */,
+				32589BD226465914000B9CF2 /* CDAUIImageView.swift in Sources */,
+				32589BDA26465914000B9CF2 /* CDAUIInsetsSafeKeyboard.swift in Sources */,
+				32589BD326465914000B9CF2 /* CDAUIBorderImageView.swift in Sources */,
+				32589BE726465914000B9CF2 /* CDAUIInputSafeKeyboardTextField.swift in Sources */,
+				32589BE926465914000B9CF2 /* CDAUIInputErrorTextField.swift in Sources */,
+				32589BDD26465914000B9CF2 /* CDAUIShapeTabBar.swift in Sources */,
+				32589BE126465914000B9CF2 /* CDAUITextField.swift in Sources */,
+				32589BCE26465914000B9CF2 /* CDAUICalendarViewStyle.swift in Sources */,
+				32589BFF26465914000B9CF2 /* CDAUIPlaceHolder.swift in Sources */,
+				32589BD626465914000B9CF2 /* CDAUIBorderSafeKeyboardKeyStyle.swift in Sources */,
+				32589BEB26465914000B9CF2 /* CDAUIShadowLabel.swift in Sources */,
+				32589BD126465914000B9CF2 /* CDAUIShadowImageView.swift in Sources */,
+				32589C0626465914000B9CF2 /* CDAUIBorder.swift in Sources */,
+				32589BE526465914000B9CF2 /* CDAUIInsetTextField.swift in Sources */,
+				32589BF526465914000B9CF2 /* CDAUIShadowButton.swift in Sources */,
+				32589B7A2646569C000B9CF2 /* ViewController.swift in Sources */,
+				32589BFB26465914000B9CF2 /* CDAUIAttributeText.swift in Sources */,
+				32589BCF26465914000B9CF2 /* CDAUIDayCalendarCollectionViewCell.swift in Sources */,
+				32589BDF26465914000B9CF2 /* CDAUIShadowTextField.swift in Sources */,
+				32589BF426465914000B9CF2 /* CDAUIBorderView.swift in Sources */,
+				32589BE826465914000B9CF2 /* CDAUIBorderTextField.swift in Sources */,
+				32589C0526465914000B9CF2 /* CDAUIInputSafeKeyboard.swift in Sources */,
+				32589BD926465914000B9CF2 /* CDAUIAppearanceSafeKeyboardStyle.swift in Sources */,
+				32589BF926465914000B9CF2 /* CDAUIButton.swift in Sources */,
+				32589BF226465914000B9CF2 /* CSUIShapeView.swift in Sources */,
+				32589C0226465914000B9CF2 /* CDAUILinearGradient.swift in Sources */,
+				32589BD526465914000B9CF2 /* CDAUIShapeSafeKeyboardKeyStyle.swift in Sources */,
+				32589BE326465914000B9CF2 /* CDAUIIconTextField.swift in Sources */,
+				32589BDC26465914000B9CF2 /* CDAUIShadowSafeKeyboardKeyStyle.swift in Sources */,
+				32589BD026465914000B9CF2 /* CDAUICalendar.swift in Sources */,
+				32589B762646569C000B9CF2 /* AppDelegate.swift in Sources */,
+				32589BDE26465914000B9CF2 /* CDAUIBorderTabBar.swift in Sources */,
+				32589BD426465914000B9CF2 /* CDAUIShapeImgeView.swift in Sources */,
+				32589BD826465914000B9CF2 /* CDAUISafeKeyboardStyle.swift in Sources */,
+				32589BFC26465914000B9CF2 /* CDAUIInputTextRestrict.swift in Sources */,
+				32589BFD26465914000B9CF2 /* CDAUIInset.swift in Sources */,
+				32589BF626465914000B9CF2 /* CDAUIGradientButton.swift in Sources */,
+				32589BE026465914000B9CF2 /* CDAUIInputTextRestrictTextField.swift in Sources */,
+				32589BEE26465914000B9CF2 /* CDAUILabel.swift in Sources */,
+				32589BF326465914000B9CF2 /* CDAUIView.swift in Sources */,
+				32589BED26465914000B9CF2 /* CDAUIAttributedTextLabel.swift in Sources */,
+				32589C0326465914000B9CF2 /* CDAUIInputBorderSate.swift in Sources */,
+				32589C0726465914000B9CF2 /* CDAUIInputError.swift in Sources */,
+				32589C0426465914000B9CF2 /* CDAUIShadow.swift in Sources */,
+				32589C0026465914000B9CF2 /* CDAUIRadialGradient.swift in Sources */,
+				32589BE226465914000B9CF2 /* CDAUIBorderStateTextField.swift in Sources */,
+				32589BEF26465914000B9CF2 /* CDAUILinearGradientView.swift in Sources */,
+				32589B782646569C000B9CF2 /* SceneDelegate.swift in Sources */,
+				32589BD726465914000B9CF2 /* CDAUISafeKeyboardView.swift in Sources */,
+				32589BE426465914000B9CF2 /* CDAUIPlaceHolderTextField.swift in Sources */,
+				32589BF126465914000B9CF2 /* CDAUIRadialGradientView.swift in Sources */,
+				32589BF826465914000B9CF2 /* CDAUIBorderButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32589B7B2646569C000B9CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32589B7C2646569C000B9CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32589B802646569D000B9CF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32589B812646569D000B9CF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32589B842646569D000B9CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32589B852646569D000B9CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32589B872646569D000B9CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE370F27D82D9A08B8E7555 /* Pods-CDAUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				INFOPLIST_FILE = CDAUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynonan.CDAUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32589B882646569D000B9CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7837353ECC1D9329DDEB3B60 /* Pods-CDAUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38VT3MSS8Q;
+				INFOPLIST_FILE = CDAUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ynonan.CDAUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32589B6D2646569C000B9CF2 /* Build configuration list for PBXProject "CDAUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32589B842646569D000B9CF2 /* Debug */,
+				32589B852646569D000B9CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32589B862646569D000B9CF2 /* Build configuration list for PBXNativeTarget "CDAUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32589B872646569D000B9CF2 /* Debug */,
+				32589B882646569D000B9CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32589B6A2646569C000B9CF2 /* Project object */;
+}
